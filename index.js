@@ -1,13 +1,14 @@
 function isPalindrome(word) {
-  const pali = reverse(word)  
-  if (word === pali){
+  let newString = word.split('')
+  let rev = newString.reverse()
+  console.log(rev)
+  if (rev = word.split('')){
       return true
     }
-    else {
-      return false 
-      }
+    else if (rev != word.split('')){
+      return false  
     }
-
+  }
 
 
 /*create argument in empty function "isPalindrome"
