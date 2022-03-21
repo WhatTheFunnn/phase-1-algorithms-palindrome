@@ -1,14 +1,14 @@
 function isPalindrome(word) {
   let newString = word.split('')
-  let rev = newString.reverse()
-  console.log(rev)
-  if (rev = word.split('')){
-      return true
-    }
-    else if (rev != word.split('')){
-      return false  
-    }
+  let rev = newString.reverse().join('')
+  console.log(rev, word)
+  if (rev == word) {
+    return true
   }
+  else if (rev != word) {
+    return false
+  }
+}
 
 
 /*create argument in empty function "isPalindrome"
