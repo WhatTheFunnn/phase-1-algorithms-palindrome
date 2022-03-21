@@ -1,25 +1,47 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
+  const pali = reverse(word)  
+  if (word === pali){
+      return true
+    }
+    else {
+      return false 
+      }
+    }
 
-/* 
-  Add your pseudocode here
-*/
+
+
+/*create argument in empty function "isPalindrome"
+   string should check the value forwards 
+   then backwards 
+      this will need to be checked letter by letter 
+
+  if it is palindrome, result should return "true"
+  if it is not palidrome, result should return "false" */
 
 /*
   Add written explanation of your solution here
 */
 
 // You can run `node index.js` to view these console logs
+
 if (require.main === module) {
-  // add your own custom tests in here
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("abba"));
+
   console.log("Expecting: true");
   console.log("=>", isPalindrome("racecar"));
 
-  console.log("");
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("a"));
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  console.log("Expecting: false");
+  console.log("=>", isPalindrome("ab"));
 }
 
 module.exports = isPalindrome;
+
+
+//write 1 argument that is a string, this string should return true if its a palindrome and false if its not 
